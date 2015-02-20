@@ -28,8 +28,8 @@ cacheSolve <- function(x, ...) {
         m <- x$getInverse()                       # gets the value stored in getInverse which is the values 
                                                   # for inverse of the matrix. 
         if(!is.null(m)) {                         # if m is null, that means there is nothing in cache.
-        message("getting cached data")            # set the message.
-        return(m)                                 # return the value of m, in this case , the message
+        message("getting cached data")            # generates a diagnostic message.
+        return(m)                                 # returns the value of m which is the inverse matrix.
                                                   # Nothing below the return function will get executed.
         }
         data <- x$get()                          # if m is null, it gets the value of x from the matrix data 
